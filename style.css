@@ -79,6 +79,7 @@ h6 { font-size: 16px; }
     padding-top: 25px;
     padding-bottom: 50px;
     justify-content: space-between;
+    gap: 2.5em;
 }
 
 .current-selection {
@@ -167,6 +168,21 @@ h6 { font-size: 16px; }
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 }
 
+.home-link {
+    height: 15px;
+    position: relative;
+    top: 120%;
+    transform: translateY(-120%);
+}
+
+.home-link img {
+    max-height: 400%;
+}
+
+.home-link a:hover{
+    background: transparent;
+  }
+
 .left-column{
     grid-area: left-column;
     padding-top: 50px;
@@ -233,11 +249,19 @@ h6 { font-size: 16px; }
     grid-area: right-column;
     display: grid;
     align-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+    padding-bottom: 75px;
 }
 
 #preview-shadow {
+    background-color: var(--previewShadow);
+    width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#preview-shadow-book {
     background-color: var(--previewShadow);
     width: 375px;
     padding-left: 30px;
@@ -246,6 +270,14 @@ h6 { font-size: 16px; }
 }
 
 #preview {
+    width: 300px;
+    border: 1.5px solid #17A2B8;
+    background-color: var(--previewBG);
+    padding: 25px;
+    position: relative;
+}
+
+#preview-book {
     width: 375px;
     border: 1.5px solid #17A2B8;
     background-color: var(--previewBG);
